@@ -751,7 +751,7 @@ td {
 }
 
 .col-content:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 ) .tab-pane-wrapper {
@@ -761,7 +761,7 @@ td {
 }
 
 .col-content:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 ) .main-content {
@@ -776,7 +776,7 @@ td {
 
 /* ### Heavy / Scroll */
 .col-content:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 ) .main-content::-webkit-scrollbar {
@@ -786,7 +786,7 @@ td {
 }
 
 .col-content:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 ) .main-content::-webkit-scrollbar-track {
@@ -794,7 +794,7 @@ td {
 }
 
 .col-content:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 ) .main-content::-webkit-scrollbar-thumb:hover {
@@ -802,7 +802,7 @@ td {
 }
 
 .col-content:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 ) .main-content::-webkit-scrollbar-thumb {
@@ -829,12 +829,12 @@ td {
 .fr-corner-A.bottom-right { bottom: 30px; right: -25px; transform: rotate(180deg); }
 
 .col-content:not(:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
 
 )) .frame-style-A::before,
 .col-content:not(:has(
-    /* All page IDs for : HEAVY */ 
+    /* All page IDs for : STYLE A */ 
     #chara-char.show
     
 )) .fr-corner-A { display: none; }
