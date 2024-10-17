@@ -46,11 +46,11 @@
     --corner-size: 150px;
 
     /* Page / Heavy */
-    --title-style-A: #cc2b34;
-    --frame-style-A: #cc2b34;
-    --scrollbar-color-style-A: #cc2b34;
-    --corner-style-A: url('img/corner_2_lines-10px.png');
-    --corner-style-A-color: invert(29%) sepia(55%) saturate(3302%) hue-rotate(339deg) brightness(81%) contrast(98%);
+    --title-heavy: #cc2b34;
+    --frame-heavy: #cc2b34;
+    --scrollbar-color-heavy: #cc2b34;
+    --corner-heavy: url('img/corner_2_lines-10px.png');
+    --corner-heavy-color: invert(29%) sepia(55%) saturate(3302%) hue-rotate(339deg) brightness(81%) contrast(98%);
 }
 
 @font-face {
@@ -147,7 +147,7 @@ h3 { font-size: calc(22px + (48 - 22) * ((100vw - 300px) / (1900 - 300))); }
     width: 680px;
 }
 
-#chara-stats .title-side {
+#bio-stats .title-side {
     bottom: 720px;
     width: 720px;
 }
@@ -534,7 +534,7 @@ txt-em {
 /*#endregion*/
 
 /* #region -------------------------- * Quotes * -------------------------- */
-#chara-quote {
+#bio-quote {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -546,7 +546,7 @@ txt-em {
     height: 300px;
 }
 
-#chara-quote::before {
+#bio-quote::before {
     content: "";
     position: absolute;
     top: 0;
@@ -688,7 +688,7 @@ td {
 /*
 *    With the way the HTML is structured, all frame classes need to be added,
 *     but you can choose which frames appear on what pages by adding the
-*          [tab-pane] <div> ID on every section that asks for it. 
+*            [tab-pane] <div> ID at the end of each section here. 
 *
 */
 
@@ -714,30 +714,26 @@ td {
 }
 
 /* Show only on certain tabs */
-.col-content:not(:has(
-
-    #chara-stats.show
-
-)) .frame-rounded::before {
+.col-content:not(:has(#bio-stats.show)) .frame-rounded::before {
     display: none;
 }
 /*#endregion*/
 
-/* #region -------------------------- Page / Style A -------------------------- */
-.title-style-A {          /* Add this next to [.tab-title]  */                     
+/* #region -------------------------- Page / Heavy -------------------------- */
+.title-heavy {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 75px;
-    color: var(--title-style-A);
+    color: var(--title-heavy);
 
     color: transparent; 
     -webkit-text-stroke: 0.5px var(--title-color); 
     text-shadow: none; 
 }
 
-.frame-style-A::before {
+.frame-heavy::before {
     content: "";
-    border: 1px solid var(--frame-style-A);
+    border: 1px solid var(--frame-heavy);
     position: absolute;
     top: 30px;
     right: 30px;
@@ -750,21 +746,13 @@ td {
     height: calc(100% - 60px);
 }
 
-.col-content:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-) .tab-pane-wrapper {
+.col-content:has(#bio-char.show) .tab-pane-wrapper {
     min-height: calc(100vh - 10px);
     padding-top: 0px;
     overflow: hidden;
 }
 
-.col-content:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-) .main-content {
+.col-content:has(#bio-char.show) .main-content {
     display: block;
     margin: 30px;
     width: calc(100% - 60px);
@@ -775,69 +763,47 @@ td {
 }
 
 /* ### Heavy / Scroll */
-.col-content:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-) .main-content::-webkit-scrollbar {
+.col-content:has(#bio-char.show) .main-content::-webkit-scrollbar {
     z-index: 99;
     width: 1px;
     margin-right: -20px;
 }
 
-.col-content:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-) .main-content::-webkit-scrollbar-track {
+.col-content:has(#bio-char.show) .main-content::-webkit-scrollbar-track {
     background: var(--scrollbar-track);
 }
 
-.col-content:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-) .main-content::-webkit-scrollbar-thumb:hover {
-    background-color: var(--scrollbar-color-style-A);
+.col-content:has(#bio-char.show) .main-content::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-color-heavy);
 }
 
-.col-content:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-) .main-content::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color-style-A);
+.col-content:has(#bio-char.show) .main-content::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color-heavy);
     border-radius: 10px;
-    border: 10px solid var(--scrollbar-color-style-A);
+    border: 10px solid var(--scrollbar-color-heavy);
 }
 
 
 /* ### Heavy / Corners ### */
-.fr-corner-A {
+.fr-corner-hvy {
     position: absolute;
     width: 180px;
     height: 180px;
     background-size: contain !important;
-    filter: var(--corner-style-A-color);
+    filter: var(--corner-heavy-color);
     z-index: 3;
-    background: var(--corner-style-A) no-repeat;
+    background: var(--corner-heavy) no-repeat;
 }
 
-.fr-corner-A.top-left { top: 20px; left: -25px; transform: rotate(0deg); }
-.fr-corner-A.top-right { top: 20px; right: -25px; transform: rotate(90deg); }
-.fr-corner-A.bottom-left { bottom: 30px; left: -25px; transform: rotate(-90deg); }
-.fr-corner-A.bottom-right { bottom: 30px; right: -25px; transform: rotate(180deg); }
+.fr-corner-hvy.top-left { top: 20px; left: -25px; transform: rotate(0deg); }
+.fr-corner-hvy.top-right { top: 20px; right: -25px; transform: rotate(90deg); }
+.fr-corner-hvy.bottom-left { bottom: 30px; left: -25px; transform: rotate(-90deg); }
+.fr-corner-hvy.bottom-right { bottom: 30px; right: -25px; transform: rotate(180deg); }
 
-.col-content:not(:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-
-)) .frame-style-A::before,
-.col-content:not(:has(
-    /* All page IDs for : HEAVY */ 
-    #chara-char.show
-    
-)) .fr-corner-A { display: none; }
+.col-content:not(:has(#bio-char.show)) .frame-heavy::before,
+.col-content:not(:has(#bio-char.show)) .fr-corner-hvy {
+    display: none;
+}
 /*#endregion*/
 
 /* #region -------------------------- * Divider / Table (Top + Bottom) * -------------------------- */
@@ -903,7 +869,7 @@ td {
     .col-content { justify-content: flex-start; }
     .container .col-header {  min-height: var(--header-height-m); }
     .container .col-content { min-height: fit-content; }
-    .col-content:has(#chara-char.show) .main-content { min-height: fit-content; }
+    .col-content:has(#bio-char.show) .main-content { min-height: fit-content; }
     .tab-pane-wrapper {  max-height: fit-content; }
     .table-wrapper { max-height: fit-content }
 }
@@ -932,11 +898,11 @@ td {
     th, td { display: block; width: 100%; text-align: center; }
     th { margin-bottom: 0; }
 
-    .fr-corner-A { width: 120px; height: 120px; }
-    .fr-corner-A.top-left { top: 10px; left: -10px; }
-    .fr-corner-A.top-right { top: 10px; right: -10px; }
-    .fr-corner-A.bottom-left { bottom: -10px; left: -10px; }
-    .fr-corner-A.bottom-right { bottom: -10px; right: -10px; }
+    .fr-corner-hvy { width: 120px; height: 120px; }
+    .fr-corner-hvy.top-left { top: 10px; left: -10px; }
+    .fr-corner-hvy.top-right { top: 10px; right: -10px; }
+    .fr-corner-hvy.bottom-left { bottom: -10px; left: -10px; }
+    .fr-corner-hvy.bottom-right { bottom: -10px; right: -10px; }
 }
 
 @media only screen and (max-width: 480px) {

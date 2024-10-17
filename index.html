@@ -30,19 +30,19 @@
                 <span>Omen of Chaos</span>
             </div>
 
-            <!-- Header Nav -->
-            <div id="profileTabs">
+            <!-- Header Nav
+            <div id="headerTabs">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="bio-tab" data-bs-toggle="tab" data-bs-target="#bio"
+                        <button class="nav-link active" id="chara-tab" data-bs-toggle="tab" data-bs-target="#bio"
                             type="button" role="tab" aria-controls="bio" aria-selected="true">
                             <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="top"
                                 data-bs-custom-class="nav-tooltip" data-bs-title="A quick glance"></i>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                            type="button" role="tab" aria-controls="profile" aria-selected="false">
+                        <button class="nav-link" id="story-tab" data-bs-toggle="tab" data-bs-target="#story"
+                            type="button" role="tab" aria-controls="story" aria-selected="false">
                             <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="top"
                                 data-bs-custom-class="nav-tooltip" data-bs-title="Their history"></i>
                         </button>
@@ -56,10 +56,11 @@
                     </li>
                 </ul>
             </div>
+            -->
 
             <!-- Frame -->
             <div class="frame">
-                <div class="frame-inner"></div> <!-- This will act as the clipped frame -->
+                <div class="frame-inner"></div>
                 <div class="corner top-left"></div>
                 <div class="corner top-right"></div>
                 <div class="corner bottom-left"></div>
@@ -71,220 +72,334 @@
         <div class="col col-content">
 
             <!-- Frame Heavy -->
-            <div class="frame-heavy"></div>
+            <div class="frame-style-A"></div>
 
             <!-- Frame Rounded -->
             <div class="frame-rounded"></div>
 
-            <div class="tab-content" id="profileTabsContent">
+            <!-- Main Content -->
+            <div class="tab-content">
 
-                <!-- Bio -->
-                <div class="tab-pane-internal tab-pane fade show active" id="bio" role="tabpanel"
-                    aria-labelledby="bio-tab">
+                <!-- Pages -->
+                <div class="tab-content">
 
-                    <!-- Bio Internal Pages -->
-                    <div class="tab-content">
+                    <!-- A quick glance. -->
+                    <div id="chara-intro" class="tab-pane-wrapper tab-pane fade show active" role="tabpanel"
+                        aria-labelledby="chara-page1-tab">
+                        <div class="main-content">
 
-                        <!-- Bio - A glimpse. -->
-                        <div id="bio-intro" class="tab-pane-wrapper tab-pane fade show active" role="tabpanel"
-                            aria-labelledby="bio-page1-tab">
-                            <div class="main-content">
-
-                                <!-- Bio - Quote -->
-                                <div id="bio-quote">
-                                    <p class="quote blend-diff">“What is hell? I maintain that it is the suffering of
-                                        being unable
-                                        to
-                                        love."</p>
-                                    <p>— <b>The Brothers Karamazov</b> <i>(Fyodor Dostoevsky)</i></p>
-                                </div>
-
-                                <!-- Bio - Blurb -->
-                                <p class="dropcap">Lucien is the first of the Omens and the Watcher
-                                    of
-                                    Lycoria's muse. The pair exude an air of elegance and share a fondness for
-                                    attention, but Lucien's inclination for introspection contrasts with Jehan's
-                                    occasional bouts of spirited impulsiveness. Their fates, tightly bound, play out
-                                    against a backdrop of divine conflict, with Jehan's choices casting long shadows
-                                    over the Omen's life. As the consequences of each action weigh heavily on the
-                                    Omen,
-                                    their loyalty to the goddess they once served without question begins to erode,
-                                    giving way to a growing, silent resentment.</p>
-                                <p><strong>T</strong>heir defiance, however, brings significant
-                                    repercussions—whenever
-                                    Jehan strays from Lycoria’s will, Lucien bears the brunt of her fury, becoming
-                                    the
-                                    target of divine punishment. In the shadow of their rebellion, Vaelor begins to
-                                    transform: the endless cycle of rebirth falters, giving rise to the unsettling
-                                    reality of true death—a concept that redefines the essence of existence. Lucien,
-                                    once the target of divine retribution, finds himself in an unfamiliar realm,
-                                    where
-                                    adoration, eternal yet solitary, awaited him in ways unforeseen.</p>
+                            <!-- Bio - Quote -->
+                            <div id="chara-quote">
+                                <p class="quote blend-diff">“What is hell? I maintain that it is the suffering of
+                                    being unable
+                                    to
+                                    love."</p>
+                                <p>— <b>The Brothers Karamazov</b> <i>(Fyodor Dostoevsky)</i></p>
                             </div>
+
+                            <!-- Bio - Blurb -->
+                            <p class="dropcap">Lucien is the first of the Omens and the Watcher
+                                of
+                                Lycoria's muse. The pair exude an air of elegance and share a fondness for
+                                attention, but Lucien's inclination for introspection contrasts with Jehan's
+                                occasional bouts of spirited impulsiveness. Their fates, tightly bound, play out
+                                against a backdrop of divine conflict, with Jehan's choices casting long shadows
+                                over the Omen's life. As the consequences of each action weigh heavily on the
+                                Omen,
+                                their loyalty to the goddess they once served without question begins to erode,
+                                giving way to a growing, silent resentment.</p>
+                            <p><strong>T</strong>heir defiance, however, brings significant
+                                repercussions—whenever
+                                Jehan strays from Lycoria’s will, Lucien bears the brunt of her fury, becoming
+                                the
+                                target of divine punishment. In the shadow of their rebellion, Vaelor begins to
+                                transform: the endless cycle of rebirth falters, giving rise to the unsettling
+                                reality of true death—a concept that redefines the essence of existence. Lucien,
+                                once the target of divine retribution, finds himself in an unfamiliar realm,
+                                where
+                                adoration, eternal yet solitary, awaited him in ways unforeseen.</p>
+                        </div>
+                    </div>
+
+                    <!-- A quick glance. - The bio. -->
+                    <div id="chara-stats" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
+                        aria-labelledby="chara-page2-tab">
+
+                        <div class="tab-title title-side">
+                            <h2>The bio.</h2>
                         </div>
 
-                        <!-- Bio - The bio. -->
-                        <div id="bio-stats" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
-                            aria-labelledby="bio-page2-tab">
+                        <div class="main-content">
 
-                            <div class="tab-title title-side">
-                                <h2>The bio.</h2>
-                            </div>
-
-                            <div class="main-content">
-
-                                <!-- Bio - Basics -->
-                                <div class="divider-table-top"></div>
-                                <div class="table-container table-container-border">
-                                    <div class="table-wrapper">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <td>Lucien
-                                                        <br>Lu <i>(nickname)</i>
-                                                        <br>Omen of Chaos <i>(title)</i>
-                                                        <br>Lucien Amaro Vargas <i>(AU)</i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Species</th>
-                                                    <td>Part I ✦ Lirianasára - <i>Seraphine Lúnara</i>
-                                                        <br>
-                                                        Part III ✦ Váronshá - <i>Nocturne Lúnara</i>
-                                                    </td>
-                                                <tr>
-                                                <tr>
-                                                    <th>Goes By</th>
-                                                    <td>He/She/They <i>(genderfluid)</i></td>
-                                                <tr>
-                                                <tr>
-                                                    <th>Height</th>
-                                                    <td>180.34 cm (5’ 11”)</td>
-                                                <tr>
-                                                <tr>
-                                                    <th>Birthday</th>
-                                                    <td>WIP</td>
-                                                <tr>
-                                                <tr>
-                                                    <th>MBTI</th>
-                                                    <td>ESFP</td>
-                                                <tr>
-                                                <tr>
-                                                    <th>Orientation</th>
-                                                    <td>Pansexual</td>
-                                                <tr>
-                                                <tr>
-                                                    <th>Deity</th>
-                                                    <td>Vernath
-                                                        <br>
-                                                        Lycoria <i>(as an Omen)</i>
-                                                    </td>
-                                                <tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                            <!-- Bio - Basics -->
+                            <div class="divider-table-top"></div>
+                            <div class="table-container table-container-border">
+                                <div class="table-wrapper">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th>Name</th>
+                                                <td>Lucien
+                                                    <br>Lu <i>(nickname)</i>
+                                                    <br>Omen of Chaos <i>(title)</i>
+                                                    <br>Lucien Amaro Vargas <i>(AU)</i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Species</th>
+                                                <td>Part I ✦ Lirianasára - <i>Seraphine Lúnara</i>
+                                                    <br>
+                                                    Part III ✦ Váronshá - <i>Nocturne Lúnara</i>
+                                                </td>
+                                            <tr>
+                                            <tr>
+                                                <th>Goes By</th>
+                                                <td>He/She/They <i>(genderfluid)</i></td>
+                                            <tr>
+                                            <tr>
+                                                <th>Height</th>
+                                                <td>180.34 cm (5’ 11”)</td>
+                                            <tr>
+                                            <tr>
+                                                <th>Birthday</th>
+                                                <td>WIP</td>
+                                            <tr>
+                                            <tr>
+                                                <th>MBTI</th>
+                                                <td>ESFP</td>
+                                            <tr>
+                                            <tr>
+                                                <th>Orientation</th>
+                                                <td>Pansexual</td>
+                                            <tr>
+                                            <tr>
+                                                <th>Deity</th>
+                                                <td>Vernath
+                                                    <br>
+                                                    Lycoria <i>(as an Omen)</i>
+                                                </td>
+                                            <tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="divider-table-bottom"></div>
-
                             </div>
+                            <div class="divider-table-bottom"></div>
+
+                        </div>
+                    </div>
+
+                    <!-- #region Frame / Style A - Corners -->
+                    <div class="fr-corner-A top-left"></div>
+                    <div class="fr-corner-A  top-right"></div>
+                    <div class="fr-corner-A  bottom-left"></div>
+                    <div class="fr-corner-A  bottom-right"></div>
+                    <!--endregion-->
+
+                    <!-- A quick glance. - A study. -->
+                    <div id="chara-char" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
+                        aria-labelledby="chara-page3-tab">
+
+                        <div class="tab-title title-style-A">
+                            <h2>Introspection.</h2>
                         </div>
 
-                        <!-- #region Frame / Heavy - Corners -->
-                        <div class="fr-corner-hvy top-left"></div>
-                        <div class="fr-corner-hvy  top-right"></div>
-                        <div class="fr-corner-hvy  bottom-left"></div>
-                        <div class="fr-corner-hvy  bottom-right"></div>
-                        <!--endregion-->
+                        <div class="main-content txt-section">
 
-                        <!-- Bio - A study. -->
-                        <div id="bio-char" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
-                            aria-labelledby="bio-page3-tab">
-
-                            <div class="tab-title title-heavy">
-                                <h2>Introspection.</h2>
+                            <div class="txt-row">
+                                <h3>Where they once were.</h3>
+                                <p>As the first of the Omens and the Watcher of Lycoria’s Muse, Lucien stands within the
+                                    celestial courts of the Umbral Court as a Fatekeeper of Vernath, tasked with
+                                    interpreting and conveying the Abyssal Sovereign’s will to the gods. Positioned
+                                    between the divine entities' expectations and the intricate politics of the cosmic
+                                    hierarchy, his role as an Omen binds him to the whims of Lycoria and her peers,
+                                    where his autonomy is constrained by the ever-present influence of celestial
+                                    authority and the unforgiving consequences of divine displeasure.</p>
                             </div>
 
-                            <div class="main-content txt-section">
-
-                                <div class = "txt-row">
-                                    <h3>Where they once were.</h3>
-                                     <p>As the first of the Omens and the Watcher of Lycoria’s Muse, Lucien stands within the celestial courts of the Umbral Court as a Fatekeeper of Vernath, tasked with interpreting and conveying the Abyssal Sovereign’s will to the gods. Positioned between the divine entities' expectations and the intricate politics of the cosmic hierarchy, his role as an Omen binds him to the whims of Lycoria and her peers, where his autonomy is constrained by the ever-present influence of celestial authority and the unforgiving consequences of divine displeasure.</p>
-                                </div>
-
-                                <div class = "txt-row">
-                                    <h3>WHERE THEY WILL BE.</h3>
-                                     <p>Lucien stands poised at the intersection of duty and desire in Nytharael. Since its dawn, he has been its Omen—a figure revered in all of Vaelor yet burdened by the weight of his role, navigating the delicate balance between divine decree and personal autonomy as shadows of doubt weave through his mind.</p>
-                                     <p>But now, his once-unquestioned path trembles with uncertainty. Lucien's heart, burdened by the weight of past glories and the looming responsibilities ahead, aches for clarity. Within him stirs a rebellion against the confines of his role, grappling with the relentless hand of fate.</p>
-                                </div>
-
-                                <div class = "txt-row">
-                                    <h3>The lie.</h3>
-                                     <p>Lucien's adherence to divine directives and his place within the hierarchy hinge on acceptance. Initially compliant with Vernath's counsel to respect Lycoria's authority and avoid interference, he begins to weigh the potential repercussions of defying the goddess. Enduring cycles of subservience and retribution, Lucien faces Lycoria's wrath and the consequences of his decisions, grappling with the idea that his pursuit of external validation and conformity may not justify the personal anguish it entails. This introspection propels him into a realm of self-discovery, where he begins to question his own <txt-em>worth</txt-em> beyond divine expectations and confronts the consequences of his actions, unsettling the established order of the realms.</p>
-                                </div>
-
-                                <div class = "txt-row">
-                                    <h3>The ghost.</h3>
-                                     <p>During a sacred festival venerating Lycoria, Jehan's inadvertent actions trigger Roun's recollection of past lives, giving rise to the first Shadow. This breach of decorum taints his realm with a corrupted soul, provoking her divine wrath. Lucien, faithful to Vernath as his creator, initially heeds his guidance but does not wield authority over Omens or the Herald. When he returns prematurely from the Hall of Anamnesis, where he accompanies Jehan in search of the book detailing Roun's past lives, Lycoria imprisons him for his and Jehan’s extended absence. His punishment begins with having his wings torn out as <txt-em>retribution</txt-em> for his disappearance, and he is later struck blind following Jehan's unleashing of the first Shadow—an allegory of the notion that ignorance may be bliss, contrasting with the corruption that forbidden knowledge can bring.</p>
-                                </div>
-
-                                <div class = "txt-row">
-                                    <h3>The secret(s).</h3>
-                                     <p>In Nytharael, Lucien's <txt-em>vanity</txt-em> is an open secret, whispered among its inhabitants who flock to catch glimpses of the Omen whenever he graces their presence, often more eagerly than they do for Jehan—Muse of the goddess herself. Initially, Lucien prefers observing Jehan and the realm from a distance, reluctant to be swayed from his esteemed role as the first of the Omens and Vesna’s cherished one. Yet over time, he develops a hunger for adoration. This longing intensifies after Lycoria punishes him for the second time, this time for the petty offense of relishing the Nytharans' favor and attention, which seem to eclipse their devotion to their own goddess. From then on, Lucien learns to bask in the spotlight, relishing the attention until it morphs into something darker.</p>
-                                </div>
-
-                                <div class = "txt-row">
-                                    <h3>The want.</h3>
-                                     <p>All Lucien desires is an unwavering pursuit of autonomy within Vaelor’s hierarchy. Initially constrained by Vernath's guidance and burdened by the consequences of Jehan's deeds, his desire metamorphoses into a relentless quest for genuine autonomy and freedom from external limitations. His aspiration evolves into a fervent longing to unravel the intricacies of divine authority and redefine his own identity. In doing so, Lucien aims to navigate the delicate <txt-em>balance</txt-em> between his role as an Omen and the expectations imposed by his creator, endeavoring to forge a path that surpasses prescribed roles and norms revolving around his place in Vaelor.</p>
-                                </div>
-
-                                <div class = "txt-row">
-                                    <h3>The need.</h3>
-                                     <p>Lucien finds himself entangled in the intricate power dynamics of the Umbral Court, where the gods, particularly Lycoria, struggle against the constraints imposed by Vernath's guidance. As a Fatekeeper and Omen, he occupies the nexus of divine will and mortal affairs, often bearing the brunt of the gods' frustrations when unable to fulfill Vernath's mandates. This ongoing conflict sparks a profound yearning within Lucien for autonomy within the cosmic hierarchy.</p>
-                                     <p>Achieving this autonomy requires him to navigate the delicate balance between divine expectations and personal <txt-em>agency</txt-em>. He aspires to transcend his role as a mere mediator and scapegoat in divine state of affairs, striving to redefine his identity beyond mere adherence to Vernath's will. This endeavor compels him to confront the gods' demands directly, while simultaneously unraveling the mysteries of his own existence and purpose in a realm where divine authority is both coveted and contested.</p>
-                                </div>
-
+                            <div class="txt-row">
+                                <h3>WHERE THEY WILL BE.</h3>
+                                <p>Lucien stands poised at the intersection of duty and desire in Nytharael. Since its
+                                    dawn, he has been its Omen—a figure revered in all of Vaelor yet burdened by the
+                                    weight of his role, navigating the delicate balance between divine decree and
+                                    personal autonomy as shadows of doubt weave through his mind.</p>
+                                <p>But now, his once-unquestioned path trembles with uncertainty. Lucien's heart,
+                                    burdened by the weight of past glories and the looming responsibilities ahead, aches
+                                    for clarity. Within him stirs a rebellion against the confines of his role,
+                                    grappling with the relentless hand of fate.</p>
                             </div>
+
+                            <div class="txt-row">
+                                <h3>The lie.</h3>
+                                <p>Lucien's adherence to divine directives and his place within the hierarchy hinge on
+                                    acceptance. Initially compliant with Vernath's counsel to respect Lycoria's
+                                    authority and avoid interference, he begins to weigh the potential repercussions of
+                                    defying the goddess. Enduring cycles of subservience and retribution, Lucien faces
+                                    Lycoria's wrath and the consequences of his decisions, grappling with the idea that
+                                    his pursuit of external validation and conformity may not justify the personal
+                                    anguish it entails. This introspection propels him into a realm of self-discovery,
+                                    where he begins to question his own <txt-em>worth</txt-em> beyond divine
+                                    expectations and confronts the consequences of his actions, unsettling the
+                                    established order of the realms.</p>
+                            </div>
+
+                            <div class="txt-row">
+                                <h3>The ghost.</h3>
+                                <p>During a sacred festival venerating Lycoria, Jehan's inadvertent actions trigger
+                                    Roun's recollection of past lives, giving rise to the first Shadow. This breach of
+                                    decorum taints his realm with a corrupted soul, provoking her divine wrath. Lucien,
+                                    faithful to Vernath as his creator, initially heeds his guidance but does not wield
+                                    authority over Omens or the Herald. When he returns prematurely from the Hall of
+                                    Anamnesis, where he accompanies Jehan in search of the book detailing Roun's past
+                                    lives, Lycoria imprisons him for his and Jehan’s extended absence. His punishment
+                                    begins with having his wings torn out as <txt-em>retribution</txt-em> for his
+                                    disappearance, and he is later struck blind following Jehan's unleashing of the
+                                    first Shadow—an allegory of the notion that ignorance may be bliss, contrasting with
+                                    the corruption that forbidden knowledge can bring.</p>
+                            </div>
+
+                            <div class="txt-row">
+                                <h3>The secret(s).</h3>
+                                <p>In Nytharael, Lucien's <txt-em>vanity</txt-em> is an open secret, whispered among its
+                                    inhabitants who flock to catch glimpses of the Omen whenever he graces their
+                                    presence, often more eagerly than they do for Jehan—Muse of the goddess herself.
+                                    Initially, Lucien prefers observing Jehan and the realm from a distance, reluctant
+                                    to be swayed from his esteemed role as the first of the Omens and Vesna’s cherished
+                                    one. Yet over time, he develops a hunger for adoration. This longing intensifies
+                                    after Lycoria punishes him for the second time, this time for the petty offense of
+                                    relishing the Nytharans' favor and attention, which seem to eclipse their devotion
+                                    to their own goddess. From then on, Lucien learns to bask in the spotlight,
+                                    relishing the attention until it morphs into something darker.</p>
+                            </div>
+
+                            <div class="txt-row">
+                                <h3>The want.</h3>
+                                <p>All Lucien desires is an unwavering pursuit of autonomy within Vaelor’s hierarchy.
+                                    Initially constrained by Vernath's guidance and burdened by the consequences of
+                                    Jehan's deeds, his desire metamorphoses into a relentless quest for genuine autonomy
+                                    and freedom from external limitations. His aspiration evolves into a fervent longing
+                                    to unravel the intricacies of divine authority and redefine his own identity. In
+                                    doing so, Lucien aims to navigate the delicate <txt-em>balance</txt-em> between his
+                                    role as an Omen and the expectations imposed by his creator, endeavoring to forge a
+                                    path that surpasses prescribed roles and norms revolving around his place in Vaelor.
+                                </p>
+                            </div>
+
+                            <div class="txt-row">
+                                <h3>The need.</h3>
+                                <p>Lucien finds himself entangled in the intricate power dynamics of the Umbral Court,
+                                    where the gods, particularly Lycoria, struggle against the constraints imposed by
+                                    Vernath's guidance. As a Fatekeeper and Omen, he occupies the nexus of divine will
+                                    and mortal affairs, often bearing the brunt of the gods' frustrations when unable to
+                                    fulfill Vernath's mandates. This ongoing conflict sparks a profound yearning within
+                                    Lucien for autonomy within the cosmic hierarchy.</p>
+                                <p>Achieving this autonomy requires him to navigate the delicate balance between divine
+                                    expectations and personal <txt-em>agency</txt-em>. He aspires to transcend his role
+                                    as a mere mediator and scapegoat in divine state of affairs, striving to redefine
+                                    his identity beyond mere adherence to Vernath's will. This endeavor compels him to
+                                    confront the gods' demands directly, while simultaneously unraveling the mysteries
+                                    of his own existence and purpose in a realm where divine authority is both coveted
+                                    and contested.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- A brief summary. -->
+                    <div id="chara-story" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
+                        aria-labelledby="chara-page4-tab">
+
+                        <div class="tab-title">
+                        </div>
+
+                        <div class="main-content">
+                            4
                         </div>
 
                     </div>
 
-                    <!-- Bio Nav -->
-                    <ul class="nav nav-tabs internal-nav" id="bio-nav" role="tablist">
+                    <!-- Their demeanor. -->
+                    <div id="chara-demeanor" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
+                        aria-labelledby="chara-page5-tab">
 
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="bio-page1-tab" data-bs-toggle="tab"
-                                data-bs-target="#bio-intro" type="button" role="tab" aria-controls="bio-intro"
-                                aria-selected="true">
-                                <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    data-bs-custom-class="internal-nav-tooltip" data-bs-title="A glimpse."></i>
-                            </button>
-                        </li>
+                        <div class="tab-title">
+                        </div>
 
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="bio-page1-tab" data-bs-toggle="tab" data-bs-target="#bio-stats"
-                                type="button" role="tab" aria-controls="bio-stats" aria-selected="false">
-                                <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    data-bs-custom-class="internal-nav-tooltip" data-bs-title="The bio."></i>
-                            </button>
-                        </li>
+                        <div class="main-content">
+                            5
+                        </div>
 
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="bio-page1-tab" data-bs-toggle="tab" data-bs-target="#bio-char"
-                                type="button" role="tab" aria-controls="bio-char" aria-selected="false">
-                                <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
-                                    data-bs-custom-class="internal-nav-tooltip" data-bs-title=" A study."></i>
-                            </button>
-                        </li>
-                    </ul>
+                    </div>
+
+                    <!-- Aesthetics. -->
+                    <div id="chara-aesthetics" class="tab-pane-wrapper tab-pane fade" role="tabpanel"
+                        aria-labelledby="chara-page6-tab">
+
+                        <div class="tab-title">
+                        </div>
+
+                        <div class="main-content">
+                            6
+                        </div>
+                    </div>
 
                 </div>
 
-                <div class="tab-pane-internal tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    2</div>
+                <!-- Nav -->
+                <ul class="nav nav-tabs internal-nav" id="chara-nav" role="tablist">
 
-                <div class="ttab-pane-internal tab-pane fade" id="contact" role="tabpanel"
-                    aria-labelledby="contact-tab">3</div>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="chara-page1-tab" data-bs-toggle="tab"
+                            data-bs-target="#chara-intro" type="button" role="tab" aria-controls="chara-intro"
+                            aria-selected="true">
+                            <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="internal-nav-tooltip" data-bs-title="A quick glance.."></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chara-page2-tab" data-bs-toggle="tab" data-bs-target="#chara-stats"
+                            type="button" role="tab" aria-controls="chara-stats" aria-selected="false">
+                            <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="internal-nav-tooltip" data-bs-title="The bio."></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chara-page3-tab" data-bs-toggle="tab" data-bs-target="#chara-char"
+                            type="button" role="tab" aria-controls="chara-char" aria-selected="false">
+                            <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="internal-nav-tooltip" data-bs-title="A study."></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chara-page4-tab" data-bs-toggle="tab"
+                            data-bs-target="#chara-story" type="button" role="tab" aria-controls="chara-story"
+                            aria-selected="false">
+                            <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="internal-nav-tooltip" data-bs-title="A brief summary."></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chara-page5-tab" data-bs-toggle="tab"
+                            data-bs-target="#chara-demeanor" type="button" role="tab" aria-controls="chara-demeanor"
+                            aria-selected="false">
+                            <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="internal-nav-tooltip" data-bs-title="Their demeanor."></i>
+                        </button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chara-page6-tab" data-bs-toggle="tab"
+                            data-bs-target="#chara-aesthetics" type="button" role="tab" aria-controls="chara-aesthetics"
+                            aria-selected="false">
+                            <i class="cp cp-diamonds" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="internal-nav-tooltip" data-bs-title="The aesthetics."></i>
+                        </button>
+                    </li>
+
+                </ul>
 
             </div>
 
@@ -305,6 +420,10 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
+    </script>
+
+    <script>
+
     </script>
 </body>
 
